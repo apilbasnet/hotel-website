@@ -10,6 +10,13 @@ const Todo = () => {
             setTodos(response.data);
         })
 
+        // fetch("https://jsonplaceholder.typicode.com/todos?_limit=100")
+        //     .then((res) => {
+        //         return res.json();
+        //     })
+        //     .then(data => {
+        //         console.log(data)
+        //     })
 
 
     }, [])

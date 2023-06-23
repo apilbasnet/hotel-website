@@ -1,7 +1,6 @@
 import img from "../assets/background.jpg"
 import Button from 'react-bootstrap/Button';
 import Overlay from './Overlay';
-import { useEffect, useState } from "react";
 
 const Hero = () => {
 

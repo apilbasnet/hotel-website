@@ -5,6 +5,7 @@ import Card from 'react-bootstrap/Card';
 // import img1 from '../assets/thulobed.jpg'
 
 function Cards(props) {
+    
     return (
         <Card style={{ width: '28rem' }}>
             <Card.Img variant="top" src={props.image} />
