@@ -6,6 +6,7 @@ import Contact from './Pages/Contact';
 import Footer from './Components/Footer';
 import NavigationBar from './Components/Navbar';
 import Login from './Pages/loginpage';
+import Todo from './Pages/Todo';
 
 
 
@@ -20,6 +21,7 @@ const App = () => {
           <Route path='/facilities' element={<Facilities />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/login' element={<Login />} />
+          <Route path='/todos' element={<Todo />} />
 
         </Routes>
         <Footer />
