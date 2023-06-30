@@ -2,18 +2,20 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function loginpage() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-
+    const navigate = useNavigate();
 
 
 
     const handleChange = (e) => {
         // console.log(e.target.name);
-        
+
         if (e.target.name === 'email') {
             setEmail(e.target.value);
         } else {
@@ -48,9 +50,14 @@ function loginpage() {
                     <Form.Label>Password</Form.Label>
                     <Form.Control type="password" placeholder="Password" />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Check me out" />
+                <Form.Group className="mb-3 flex gap-2" controlId="formBasicCheckbox">
+                    <Form.Check type="checkbox" label="Remember me " />
+                    
+
+                    <Link className='font-semibold ' to="/register"> Sign up</Link>
+                    
                 </Form.Group>
+
                 <Button variant="primary" type="submit" className='outline-none bg-purple-500 text-white rounded-none'>
                     Submit
                 </Button>
