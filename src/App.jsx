@@ -6,7 +6,9 @@ import Contact from './Pages/Contact';
 import Footer from './Components/Footer';
 import NavigationBar from './Components/Navbar';
 import Login from './Pages/loginpage';
-import Todo from './Pages/Todo';
+import Todo from './Pages/Todos/Todo';
+import Register from './Pages/Register';
+import TodoDetails from './Pages/Todos/TodoDetails';
 
 
 
@@ -22,6 +24,7 @@ const App = () => {
           <Route path='/contact' element={<Contact />} />
           <Route path='/login' element={<Login />} />
           <Route path='/todos' element={<Todo />} />
+          <Route path='/todos/:id' element={<TodoDetails />} />
           <Route path = '/register' element= {<Register />}> </Route>
 
         </Routes>

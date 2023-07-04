@@ -36,7 +36,7 @@ const Todo = () => {
                         <th>User Id</th>
                         <th>Task</th>
                         <th>Status</th>
-                        {/* <th></th> */}
+                        <th>View Details</th>
                     </tr>
                 </thead>
 
@@ -48,6 +48,7 @@ const Todo = () => {
                             <td>{todo.userId}</td>
                             <td>{todo.title}</td>
                             <td>{todo.completed ? <Badge bg="success">Completed</Badge> : <Badge bg="danger">Pending</Badge>}</td>
+                            <td className='w-40'>View Details</td>
                         </tr>
                     })}
 
